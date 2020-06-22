@@ -12,9 +12,9 @@
 @import url(./__item_source/news__item_source.css);
 @import url(./__item_title/news__item_title.css);
 @import url(./__item/news__item.css);
-@import url(./__out_image/news__out_image.css);
-@import url(./__out_subtitle/news__out_subtitle.css);
-@import url(./__out_title/news__out_title.css);
+@import url(./__out-image/news__out-image.css);
+@import url(./__out-subtitle/news__out-subtitle.css);
+@import url(./__out-title/news__out-title.css);
 @import url(./__out/news__out.css);
 @import url(./__preloader/news__preloader.css);
 @import url(./__title/news__title.css);
