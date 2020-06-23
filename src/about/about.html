@@ -61,7 +61,12 @@
         </div>
       </section>
       <section class="author">
-        <img class="author__photo" alt="Author Photo" src="<%=require('../images/image03.png').default%>">
+        <div class="author__photo">
+          <picture>
+            <source media="(max-width: 900px)" srcset="<%=require('../images/image03.png').default%>">
+              <img class="author__photo" alt="Author Photo" src="<%=require('../images/image03.png').default%>">
+          </picture>
+        </div>
         <div class="author__info">
           <article class="author__info-article">
             <h3 class="headline author__info-title">Об авторе</h3>
