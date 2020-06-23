@@ -1,16 +1,16 @@
 @import url(./__analytics/news__analytics.css);
-@import url(./__analytics_image/news__analytics_image.css);
-@import url(./__analytics_text/news__analytics_text.css);
+@import url(./__analytics-image/news__analytics-image.css);
+@import url(./__analytics-text/news__analytics-text.css);
 @import url(./__button/news__button.css);
 @import url(./__container/news__container.css);
 @import url(./__data/news__data.css);
 @import url(./__find-text/news__find-text.css);
 @import url(./__find/news__find.css);
 @import url(./__head/news__head.css);
-@import url(./__item_date/news__item_date.css);
-@import url(./__item_image/news__item_image.css);
-@import url(./__item_source/news__item_source.css);
-@import url(./__item_title/news__item_title.css);
+@import url(./__item-date/news__item-date.css);
+@import url(./__item-image/news__item-image.css);
+@import url(./__item-source/news__item-source.css);
+@import url(./__item-title/news__item-title.css);
 @import url(./__item/news__item.css);
 @import url(./__out-image/news__out-image.css);
 @import url(./__out-subtitle/news__out-subtitle.css);
@@ -18,9 +18,9 @@
 @import url(./__out/news__out.css);
 @import url(./__preloader/news__preloader.css);
 @import url(./__title/news__title.css);
-@import url(./__item_subtitle/news__item_subtitle.css);
-@import url(./__item_content/news__item_content.css);
-@import url(./__item_content_info/news__item_content_info.css);
+@import url(./__item-subtitle/news__item-subtitle.css);
+@import url(./__item-content/news__item-content.css);
+@import url(./__item-contentinfo/news__item-contentinfo.css);
 
 
 .news {
@@ -52,24 +52,24 @@
     min-height: 420px;
   }
 
-  .news__item_content {
+  .news__item-content {
     padding: 16px 16px 16px 16px;
     min-height: 45%;
   }
 
-  .news__item_title {
+  .news__item-title {
     margin-top: 12px;
     margin-bottom: 10px;
   }
 
-  .news__item_subtitle {
+  .news__item-subtitle {
     margin-bottom: 8px;
 
     max-height: 88px;
     -webkit-line-clamp: 4;
   }
 
-  .news__item_source {
+  .news__item-source {
     bottom: 6px;
   }
 
@@ -111,19 +111,19 @@
     margin-bottom: 8px;
   }
 
-  .news__item_content {
+  .news__item-content {
     padding: 16px;
   }
 
-  .news__item_subtitle {
+  .news__item-subtitle {
     -webkit-line-clamp: 4;
   }
 
-  .news__item_source {
+  .news__item-source {
     bottom: 6px;
   }
 
-  .news__item_title {
+  .news__item-title {
     margin-top: 16px;
     margin-bottom: 10px;
   }

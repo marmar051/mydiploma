@@ -1,11 +1,11 @@
 @import url(./__title/api-block__title.css);
-@import url(./__link_text/api-block__link_text.css);
-@import url(./__link_image/api-block__link_image.css);
-@import url(./__link/api-block-link.css);
+@import url(./__link-text/api-block__link-text.css);
+@import url(./__link-image/api-block__link-image.css);
+@import url(./__link/api-block__link.css);
 @import url(./__head/api-block__head.css);
-@import url(./__item_date/api-block__item_date.css);
-@import url(./__item_text/api-block__item_text.css);
-@import url(./__item_title/api-block__item_title.css);
+@import url(./__item-date/api-block__item-date.css);
+@import url(./__item-text/api-block__item-text.css);
+@import url(./__item-title/api-block__item-title.css);
 
 .api-block {
   flex-direction: column;
@@ -23,7 +23,7 @@
     line-height: 34px;
   }
 
-  .api-block__item_title {
+  .api-block__item-title {
     font-size: 22px;
     line-height: 26px;
   }
@@ -41,12 +41,12 @@
     line-height: 34px;
   }
 
-  .api-block__item_title {
+  .api-block__item-title {
     font-size: 22px;
     line-height: 26px;
   }
 
-  .api-block__link_text {
+  .api-block__link-text {
     margin-right: 7px;
   }
 }

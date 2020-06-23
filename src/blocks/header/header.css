@@ -3,7 +3,7 @@
 @import url(./__link_underline/header__link_underline.css);
 @import url(./__logo/header__logo.css);
 @import url(./__nav/header__nav.css);
-@import url(./__nav_item/header__nav_item.css);
+@import url(./__nav-item/header__nav-item.css);
 @import url(./_type/header_type_light.css);
 @import url(./_type/header_type_dark.css);
 @import url(./__nav-list/header__nav-list.css);
@@ -48,7 +48,7 @@
     margin-right: 14px;
   }
 
-  .header__nav_item {
+  .header__nav-item {
     margin-right: 11px;
   }
 }

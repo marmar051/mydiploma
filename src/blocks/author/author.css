@@ -1,8 +1,8 @@
-@import url(./__info_title/author__info_title.css);
+@import url(./__info-title/author__info-title.css);
 @import url(./__info/author__info.css);
 @import url(./__photo/author__photo.css);
-@import url(./__info_article/author__info_article.css);
-@import url(./__info_subtitle_paragraph/author__info_subtitle_paragraph.css);
+@import url(./__info-article/author__info-article.css);
+@import url(./__info-subtitle-paragraph/author__info-subtitle-paragraph.css);
 
 
 .author {
@@ -45,7 +45,7 @@
     max-width: 424px;
   }
 
-  .author__info_title {
+  .author__info-title {
     font-size: 30px;
     line-height: 40px;
     margin-bottom: 16px;
@@ -70,13 +70,13 @@
     padding-top: 0;
   }
 
-  .author__info_title {
+  .author__info-title {
     font-size: 30px;
     line-height: 40px;
     margin-bottom: 16px;
   }
 
-  .author__info_subtitle_paragraph {
+  .author__info-subtitle-paragraph {
     margin-bottom: 8px;
   }
 }

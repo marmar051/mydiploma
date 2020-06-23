@@ -1,12 +1,12 @@
-@import url(./__links_item/footer__links_item.css);
+@import url(./__links-item/footer__links-item.css);
 @import url(./__links/footer__links.css);
 @import url(./__logo/footer__logo.css);
-@import url(./__nav_item/footer__nav_item.css);
+@import url(./__nav-item/footer__nav-item.css);
 @import url(./__nav/footer__nav.css);
-@import url(./__links_image/footer__links_image.css);
+@import url(./__links-image/footer__links-image.css);
 @import url(./__content/footer__content.css);
 @import url(./__nav-list/footer__nav-list.css);
-@import url(./__nav_link/footer__nav_link.css);
+@import url(./__nav-link/footer__nav-link.css);
 
 .footer {
   display: flex;
@@ -33,7 +33,7 @@
     max-width: 511px;
   }
 
-  .footer__nav_item {
+  .footer__nav-item {
     margin-right: 25px;
   }
 
@@ -49,7 +49,7 @@
     align-items: end;
   }
 
-  .footer__nav_item {
+  .footer__nav-item {
     margin-right: 0;
     line-height: 48px;
   }

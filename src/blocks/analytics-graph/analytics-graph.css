@@ -1,7 +1,7 @@
 @import url(./__title/analytics-graph__title.css);
 @import url(./__subtitle/analytics-graph__subtitle.css);
-@import url(./__subtitle_date/analytics-graph__subtitle_date.css);
-@import url(./__subtitle_count/analytics-graph__subtitle_count.css);
+@import url(./__subtitle-date/analytics-graph__subtitle-date.css);
+@import url(./__subtitle-count/analytics-graph__subtitle-count.css);
 @import url(./__day/analytics-graph__day.css);
 @import url(./__bar/analytics-graph__bar.css);
 @import url(./__bar-item_num/analytics-graph__bar-item_num.css);
@@ -48,7 +48,7 @@
     grid-row-gap: 24px;
   }
 
-  .analytics-graph__subtitle_date {
+  .analytics-graph__subtitle-date {
     margin-right: 16px;
   }
 }

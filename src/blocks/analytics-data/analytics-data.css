@@ -2,7 +2,7 @@
 @import url(./__news/analytics-data__news.css);
 @import url(./__mentions/analytics-data__mentions.css);
 @import url(./__mark/analytics-data__mark.css);
-@import url(./__news_item/analytics-data__news_item.css);
+@import url(./__news-item/analytics-data__news-item.css);
 
 .analytics-data {
   background-color: #FFF;
