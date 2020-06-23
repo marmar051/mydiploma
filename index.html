@@ -132,7 +132,13 @@
         </div>
       </section>
       <section class="author">
-        <img class="author__photo" alt="Author Photo" src="./images/image03.png">
+        <div class="author__photo">
+          <picture>
+            <source media="(max-width: 900px)" srcset="./images/image03.png">
+              <img class="author__photo" alt="Author Photo" src="./images/image03.png">
+          </picture>
+        </div>
+        
         <div class="author__info">
           <article class="author__info-article">
             <h3 class="headline author__info-title">Об авторе</h3>
