@@ -24,7 +24,7 @@ export default class NewsCard {
     cardContentInfo.classList.add('news__item-contentinfo');
     cardDate.classList.add('date', 'api-block__item-date', 'news__item-date');
     cardTitle.classList.add('headline', 'api-block__item-title', 'news__item-title');
-    cardSubtitle.classList.add('api-block__item-text', 'news__item_subtitle');
+    cardSubtitle.classList.add('api-block__item-text', 'news__item-subtitle');
     cardSource.classList.add('news__item-source');
 
     cardLink.setAttribute('href', `${element.url}`);
