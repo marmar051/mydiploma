@@ -81,7 +81,7 @@ const handleKeyWord = (event) => {
   countNews = 3;
   event.preventDefault();
   searchInput.renderStartNews();
-  //formSearch.reset();
+  formSearch.reset();
 };
 
 //Функция отрисовки дополнительных карточек

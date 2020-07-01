@@ -46,15 +46,19 @@ export default class SearchInput {
     this.options.newsOut.classList.remove('news__out_is-visible');//отключение блока "ничего не найдено"
     this.options.newsData.classList.remove('news__data_is-visible');//скрытие найденных предыдущих новостей
     this.options.newsButton.classList.remove('news__button_is-invisible');//включение кнопки доп новостей
+    
     //очистка контейнера с предыдущими найденными новостями
     while (this.options.newsContainer.firstChild) {
       this.options.newsContainer.removeChild(this.options.newsContainer.firstChild);
+      
     }
+    document.querySelector('.lead__button').setAttribute('disabled', true);
+    document.querySelector('.lead__button').classList.remove('lead__button_type_active');
     //включение прелоудера
     this._renderLoading(true, this.options.newsFind);
     //запись новостей в локальное хранилище с дальнейшими действиями
     this.options.dataStorage.saveStorage(this.options.themeInput)
-    .then((newsItemsArray) => {
+     .then((newsItemsArray) => {
       //Проверка наличия новостей
       if (newsItemsArray.length === 0) {
         this._renderLoading(false, this.options.newsFind);//отключение прелоудера
