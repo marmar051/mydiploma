@@ -54,9 +54,9 @@ export default class SearchInput {
     this._renderLoading(true, this.options.newsFind);
     //запись новостей в локальное хранилище с дальнейшими действиями
     this.options.dataStorage.saveStorage(this.options.themeInput)
-    .then((data) => {
+    .then((newsItemsArray) => {
       //Проверка наличия новостей
-      if (data.length === 0) {
+      if (newsItemsArray.length === 0) {
         this._renderLoading(false, this.options.newsFind);//отключение прелоудера
         this.options.newsOut.classList.add('news__out_is-visible');//включение блока "ничего не найдено"
       } else {
@@ -64,16 +64,16 @@ export default class SearchInput {
         const newsBlock = this.options.newsCardList.createNewsContainer();//Создание первого блока новостей
         this.options.newsContainer.appendChild(newsBlock);//добавление первого блока в контейнер
         this._renderLoading(false, this.options.newsFind);//отключение прелоудера
-        const len = data.length < maxCountNewsInBlock ? data.length : maxCountNewsInBlock;//переменная для опредления длины массива новостей
+        const len = newsItemsArray.length < maxCountNewsInBlock ? newsItemsArray.length : maxCountNewsInBlock;//переменная для опредления длины массива новостей
         //рендеринг первых трех новостей
         for (let i = 0; i < len; i += 1) {
-          data[i].urlToImage === null ? data[i].urlToImage = "./images/favicon.png" : data[i].urlToImage;
-          this.options.renderNews(this.options.newsCardList, newsBlock, this.options.newsCard, data, i);
+          newsItemsArray[i].urlToImage === null ? newsItemsArray[i].urlToImage = "./images/favicon.png" : newsItemsArray[i].urlToImage;
+          this.options.renderNews(this.options.newsCardList, newsBlock, this.options.newsCard, newsItemsArray, i);
           this._setSubmitButtonState(this.options.formSearch, this.options.searchButton);
         };
         this.options.newsData.classList.add('news__data_is-visible');//показ первого блока новостей
         //Если новостей < 3 - дальнейшие действия
-        if(data.length <= maxCountNewsInBlock) {
+        if(newsItemsArray.length <= maxCountNewsInBlock) {
           this.options.newsButton.classList.add('news__button_is-invisible');//скрытие кнопки с доп новостями
         }
       }
