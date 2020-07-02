@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Сервис для анализа новостей">
-  <meta name="author" content="News Analyzer">
+  <meta name="author" content="MARMAR051">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>NewsAnalyzer</title>
-  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <title>NewsAnalyzer. О проекте</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.about.css %>">
   <link rel="icon" href="<%=require('../images/favicon.png').default%>" type="image/x-icon" />
+  <link rel="shortcut icon" href="<%=require('../images/favicon.png').default%>" type="image/x-icon" />
 </head>
 <body>
   <div class="root">
@@ -32,92 +33,55 @@
       <section class="info">
         <article class="info__article">
           <h3 class="headline info__title">Клиентам</h3>
-          <p class="info__subtitle_paragraph">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент, какими технологиями владеет.</p>
-          <p class="info__subtitle_paragraph">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
-          <p class="info__subtitle_paragraph">Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
-          <p class="info__subtitle_paragraph">При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет проблем с отображением. А значит, потенциальная аудитория возрастает.</p>
-          <p class="info__subtitle_paragraph">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
+          <p class="info__subtitle-paragraph">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент, какими технологиями владеет.</p>
+          <p class="info__subtitle-paragraph">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
+          <p class="info__subtitle-paragraph">Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
+          <p class="info__subtitle-paragraph">При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет проблем с отображением. А значит, потенциальная аудитория возрастает.</p>
+          <p class="info__subtitle-paragraph">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
         </article>
       </section>
       <section class="technology">
         <h3 class="headline technology__title">Используемые технологии</h3>
         <div class="technology__container">
           <div class="technology__item">
-            <span class="headline technology__item-title">HTML</span>
-            <img class="headline technology__item-pic" alt="HTML" src="<%=require('../images/HTML.png').default%>">
+            <span class="headline technology__item_title">HTML</span>
+            <img class="headline technology__item_pic" alt="HTML" src="<%=require('../images/HTML.png').default%>">
           </div>
           <div class="technology__item">
-            <span class="technology__item-title">CSS</span>
-            <img class="headline technology__item-pic" alt="CSS" src="<%=require('../images/CSS.png').default%>">
+            <span class="technology__item_title">CSS</span>
+            <img class="headline technology__item_pic" alt="CSS" src="<%=require('../images/CSS.png').default%>">
           </div>
           <div class="technology__item">
-            <span class="technology__item-title">Java Script</span>
-            <img class="headline technology__item-pic" alt="JS" src="<%=require('../images/js.png').default%>">
+            <span class="technology__item_title">Java Script</span>
+            <img class="headline technology__item_pic" alt="JS" src="<%=require('../images/js.png').default%>">
           </div>
           <div class="technology__item">
-            <span class="technology__item-title">Webpack</span>
-            <img class="headline technology__item-pic" alt="WP" src="<%=require('../images/webpack.png').default%>">
+            <span class="technology__item_title">Webpack</span>
+            <img class="headline technology__item_pic" alt="WP" src="<%=require('../images/webpack.png').default%>">
           </div>
         </div>
       </section>
       <section class="author">
-        <div class="author__photo">
-          <picture>
-            <source media="(max-width: 900px)" srcset="<%=require('../images/image03.png').default%>">
-              <img class="author__photo" alt="Author Photo" src="<%=require('../images/image03.png').default%>">
-          </picture>
-        </div>
+        <img class="author__photo" alt="Author Photo" src="<%=require('../images/1-min.png').default%>">
         <div class="author__info">
           <article class="author__info-article">
             <h3 class="headline author__info-title">Об авторе</h3>
-            <p class="author__info-subtitle-paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
-            <p class="author__info-subtitle-paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+            <p class="author__info-subtitle-paragraph">Привет. Я начинающий Frontend-разработчик. В процессе обучения освоил технологии разработки: HTML, CSS, JavaScript, Git, Webpack. Планирую углубиться в UX/UI</p>
+            <p class="author__info-subtitle-paragraph">Обучение я проходил в школе от Яндекс.Практикума. Все обучение было разбито на спринты с мягкими и жесткими дедлайнами, каждый из которых содержал в себе теоретическую часть, тренажер с практическим заданиями и самостоятельную работу в виде проекта. В результате обучения было выполнено три учебных и один дипломный проект. Дипломный проект представлен Вам на данной странице. Все проекты были проверены опытными ревьюерами команды Яндекс.Практикума. Репозитории данных проектов размещены на моей странице в Github.</p>
+            <p class="author__info-subtitle-paragraph">Буду рад стать частью какой-либо команды! Готов повышать свои skills и работать на результат в интересных проектах.</p>
           </article>
         </div>
       </section>
       <section class="commits api-block">
         <div class="commits__head api-block__head">
           <h3 class="headline commits__title api-block__title">История коммитов из Github</h3>
-          <a class="link commits__link api-block__link" href="https://github.com/MARMAR051/diploma/commits/master">
+          <a class="link commits__link api-block__link" href="https://github.com/RD1878/praktikum_diploma/commits/master">
             <p class="commits__link-text api-block__link-text">Открыть в Github</p>
             <img class="commits__link-image api-block__link-image" alt="Стрелка" src="<%=require('../images/Strelka.png').default%>">
           </a>
         </div>
         <div class="commits__container swiper-container">
           <div class="commits__wraper swiper-wrapper">
-            <div class="commits__slide swiper-slide">
-              <p class="api-block__item-date commits__date">14 августа, 2019</p>
-              <div class="commits__author">
-                <img class="commits__author-photo" alt="Photo" src="<%=require('../images/image01.png').default%>">
-                <div class="commits__author-data">
-                  <h4 class="headline api-block__item-title commits__author-name">Антон Долинин</h4>
-                  <a class="link commits__author-email" href="mailto:anton@yandex.ru">anton@yandex.ru</a>
-                </div>
-              </div>
-              <p class="api-block__item-text commits__text">Emmet (formerly Zen Coding) is a web- developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
-            </div>
-            <!--<div class="commits__slide swiper-slide">
-              <p class="api-block__item-date commits__date">14 августа, 2019</p>
-              <div class="commits__author">
-                <img class="commits__author-photo" alt="Photo" src="<%=require('../images/image04.png').default%>">
-                <div class="commits__author-data">
-                  <h4 class="headline api-block__item-title commits__author-name">Мария Фёдорова</h4>
-                  <a class="link commits__author-email" href="mailto:anton@yandex.ru">mariiifed@yandex.ru</a>
-                </div>
-              </div>
-              <p class="api-block__item-text commits__text">You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open Tools > Plugins > Available plugins and find and install Emmet plugin.</p>
-            </div>
-            <div class="commits__slide swiper-slide">
-              <p class="api-block__item-date commits__date">14 августа, 2019</p>
-              <div class="commits__author">
-                <img class="commits__author-photo" alt="Photo" src="<%=require('../images/image05.png').default%>">
-                <div class="commits__author-data">
-                  <h4 class="headline api-block__item-title commits__author-name">Инга Иванова</h4>
-                  <a class="link commits__author-email" href="mailto:anton@yandex.ru">ingaiva@yandex.ru</a>
-                </div>
-              </div>
-              <p class="api-block__item-text commits__text">With Emmet, you can type CSS-like expressions that can be dynamically parsed, and produce output depending on what you type in the abb...</p>
-            </div>   -->     
           </div>
           <div class="commits__pagination swiper-pagination"></div>
           <div class="commits__button commits__button_type_left"></div>
@@ -132,7 +96,7 @@
         <nav class="footer__nav">
           <ul class="nav-list footer__nav-list">
             <li class="footer__nav-item"><a class="link footer__nav-link" href="index.html">Главная</a></li>
-            <li class="footer__nav-item"><a class="link footer__nav-link" href="about.html">О&#160;проекте</a></li>
+            <li class="footer__nav-item"><a class="link footer__nav-link" href="about.html">О проекте</a></li>
             <li class="footer__nav-item"><a class="link footer__nav-link" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a></li>
           </ul>
         </nav>
@@ -143,6 +107,6 @@
       </div>
     </footer>
   </div>
-  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
 </body>
 </html>

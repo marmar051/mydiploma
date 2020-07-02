@@ -1,6 +1,6 @@
 @import url(./__title/info__title.css);
 @import url(./__article/info__article.css);
-@import url(./__subtitle_paragraph/info__subtitle_paragraph.css);
+@import url(./__subtitle-paragraph/info__subtitle-paragraph.css);
 
 .info {
   display: flex;
@@ -24,7 +24,7 @@
     margin-bottom: 16px;
   }
 
-  .info__subtitle_paragraph {
+  .info__subtitle-paragraph {
     max-width: 688px;
   }
 }
@@ -40,7 +40,7 @@
     margin-bottom: 16px;
   }
 
-  .info__subtitle_paragraph {
+  .info__subtitle-paragraph {
     max-width: 688px;
   }
 
